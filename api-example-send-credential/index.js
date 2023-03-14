@@ -68,7 +68,7 @@ async function main() {
   const didcommMessage = await apiPost(`${API_URL}/messaging/encrypt`, {
     senderDid: ISSUER_DID,
     recipientDids: [RECIPIENT_DID, ISSUER_DID],
-    type: 'issue1', // Message type is important for the wallet to recognize it
+    type: 'issue', // Message type is important for the wallet to recognize it
     payload: {
       // You can set this domain to be whatever you like, or base it from a DID/issuer profile
       domain: 'api.dock.io',
