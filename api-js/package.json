@@ -1,0 +1,27 @@
+{
+  "name": "dock-api",
+  "version": "1.0.0",
+  "description": "Dock Issuer API",
+  "main": "src/index.js",
+  "scripts": {
+    "all": "for FILE in ./workflows/*.js; do node $FILE; done",
+    "anchors": "node ./workflows/anchorsFlow.js",
+    "dids": "node ./workflows/didFlow.js",
+    "schemas": "node ./workflows/schemaFlow.js",
+    "registries": "node ./workflows/registryFlow.js",
+    "credentials": "node ./workflows/credentialsFlow.js",
+    "presentations": "node ./workflows/presentationsFlow.js"
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "clear": "^0.1.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^24.5.2",
+    "jest": "^27.2.4"
+  }
+}
