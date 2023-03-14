@@ -19,6 +19,11 @@ async function apiPost(url, body) {
   });
 
   const data = await result.json();
+
+  if (result.status >= 400) {
+    throw new Error(`API Error: ${data}`);
+  }
+
   return data;
 }
 
