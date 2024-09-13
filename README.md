@@ -10,6 +10,6 @@ RECIPIENT_DID=did:key:walletholderrecipient
 API_URL=https://api-testnet.dock.io
 ```
 
-For some examples you may need to register an issuer DID, [view the documentation](https://docs.api.dock.io/#create-did).
+For some examples you may need to register an issuer DID, [view the documentation](https://docs.dock.io/developer-documentation/dock-api/dids).
 
 `RECIPIENT_DID` typically will be a DID from a wallet application
